@@ -22,6 +22,16 @@ public class Paddle : MonoBehaviour
             this.transform.position = new Vector3(paddlePositionX,
                     this.transform.position.y, this.transform.position.z);
         }
-        
+
+        if (Input.GetKey(KeyCode.RightArrow)) {
+
+            paddlePositionX += PaddleSpeed * Time.deltaTime;
+            this.transform.position = new Vector3(paddlePositionX,
+                this.transform.position.y, this.transform.position.z);
+        }
+
     }
+
+    //make a sound when the ball hits something
+    
 }
