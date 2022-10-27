@@ -16,7 +16,9 @@ public class Restart : MonoBehaviour
 
         if (blocks.Length < 2) {
 
-            RestartLevel();
+            //RestartLevel();
+
+            SceneManager.LoadScene("Untitled");
         }
     }
 }
